@@ -40,7 +40,7 @@ ss.fit(temp_df[col])
 final_value = ss.transform([all_values])
 
 
-with open('House_price_pred_ridge_model.pkl','rb') as f:
+with open('house_price_pred_ridge_model.pkl','rb') as f:
     chatgpt = pickle.load(f)
 
 price = chatgpt.predict(final_value)[0]
